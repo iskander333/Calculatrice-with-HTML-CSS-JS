@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="button"] 
+         { 
+         background-color:green; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         
+         } 
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+          
+         } 
+    </style>
+</head>
+<body bgcolor="#00ffff">
+    <br><br><br><br><br><br><br><br>
+    <center>
+        
+        
+    <table  align="center" border="1" >
+        <caption><h1 style="color: brown;"> Calculatrice </h1></caption>
+        <tr>
+            <td colspan="4"><input type="text" id="s"></td>
+        </tr>
+        <tr>
+        <td><input type="button" value="c"onclick="clr()"></td>
+        <td><input type="button" value="/"onclick="div()"></td>
+        <td><input type="button" value="*"onclick="mult()"></td>
+        <td><input type="button" value="d"onclick="del()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7"onclick="seven()"></td>
+            <td><input type="button" value="8"onclick="eight()"></td>
+            <td><input type="button" value="9"onclick="nine()"></td>
+            <td><input type="button" value="-"onclick="sous()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4"onclick="four()"></td>
+            <td><input type="button" value="5"onclick="five()"></td>
+            <td><input type="button" value="6"onclick="sex()"></td>
+            <td><input type="button" value="+"onclick="add()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1"onclick="one()"></td>
+            <td><input type="button" value="2"onclick="two()"></td>
+            <td><input type="button" value="3"onclick="three()"></td>
+            <td style=" background-color:green; " rowspan="2" ><input style="border: none;" type="button" value="="onclick="solve()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0"onclick="zero()"></td>
+            <td><input type="button" value="," onclick="dis()"></td>
+        </tr>
+
+    </table>
+
+    
+</center>
+    <script>
+     function one(){
+         var s=document.getElementById("s");
+         s.value=s.value+"1";
+        }
+        function two(){
+         var s=document.getElementById("s");
+         s.value=s.value+"2";
+        }
+        function three(){
+         var s=document.getElementById("s");
+         s.value=s.value+"3";
+        }
+        function four(){
+         var s=document.getElementById("s");
+         s.value=s.value+"4";
+        }
+        function five(){
+         var s=document.getElementById("s");
+         s.value=s.value+"5";
+        }
+        function sex(){
+         var s=document.getElementById("s");
+         s.value=s.value+"6";
+        }
+        function seven(){
+         var s=document.getElementById("s");
+         s.value=s.value+"7";
+        }
+        function eight(){
+         var s=document.getElementById("s");
+         s.value=s.value+"8";
+        }
+        function nine(){
+         var s=document.getElementById("s");
+         s.value=s.value+"9";
+        }
+        function zero(){
+         var s=document.getElementById("s");
+         s.value=s.value+"0";
+        }
+        function clr(){
+         var s=document.getElementById("s");
+         s.value=s.value+"c";
+        }
+        function del(){
+         var s=document.getElementById("s");
+         s.value="";
+        }
+        function add(){
+         var s=document.getElementById("s");
+         s.value=s.value+"+";
+        }
+        function sous(){
+         var s=document.getElementById("s");
+         s.value=s.value+"-";
+        }
+        function mult(){
+         var s=document.getElementById("s");
+         s.value=s.value+"*";
+        }
+        function div(){
+         var s=document.getElementById("s");
+         s.value=s.value+"/";
+        }
+        function solve(){
+         var s=document.getElementById("s");
+         s.value=eval(s.value);
+         
+        }
+        function clr(){
+         var s=document.getElementById("s");
+         s.value="";
+        }
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>
